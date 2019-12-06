@@ -1,0 +1,31 @@
+{
+    "name": "tplus/voyager-bread",
+    "description": "Generate DATABASE and BREAD from a model",
+    "type": "vcs",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TPlus",
+            "email": "tplus.dev@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+         "tcg/voyager": "^1.2"
+    },
+    "require-dev": {
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TPlus\\VoyagerBread\\VoyagerBreadServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "TPlus\\VoyagerBread\\": "src/"
+        }
+    }
+}
